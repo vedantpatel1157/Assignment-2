@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration Form</title>
+
+<style>
+body {
+font-family:Arial,sans-serif; 
+background-color: #8f834e;
+display: flex;
+justify-content:center; 
+align-items: center;
+height:300vh; 
+margin: 0;
+}
+
+.container {
+background-color:#c97c24; 
+padding: 20px;
+border-radius: 8px;
+box-shadow:02px10pxrgba(0,0,0,0.1); 
+width: 400px;
+}
+
+
+
+.registration-form h2 { text-align: center; 
+    margin-bottom: 40px;
+}
+
+.form-group {
+margin-bottom: 15px;
+}
+
+.form-grouplabel{ display: block;
+margin-bottom:2px; 
+font-weight: bold;
+padding-bottom: 2px;
+}
+
+.form p {
+display: block;
+font-weight: bold;
+/* padding-bottom: 1px; */
+}
+
+.form-groupinput{ width: 100%;
+padding: 10px;
+border:1pxsolid#ef15ad; 
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+.form-group input:focus { border-color:#007bff; 
+    outline: none;
+}
+.bu{
+margin-left: 80px;
+justify-content: space-between;
+}
+ 
+.button {
+margin:10px; 
+width: 30%;
+padding: 10px;
+background-color:#007bff; 
+color: white;
+border: none;
+border-radius:4px; 
+cursor: pointer;
+font-size: 16px;
+transition: all 0.3s ease-in;
+}
+
+.button:hover {
+background-color:#74e70e; 
+color:black;
+}
+
+.select{
+padding-bottom:5px; 
+font-weight: bold;
+width: 100px;
+display: block;
+}
+
+.select Education{
+padding-bottom: 5px;
+}
+
+.message {
+text-align:center; 
+margin-top: 25px;
+}
+ 
+.message a {
+color: #59a8fc;
+text-decoration: none;
+}
+
+.message a:hover {
+text-decoration:underline; 
+color: white;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<form class="registration-form">
+<center>
+  <h2>Register</h2>
+</center>
+<div class="form-group">
+<label for="username">Username</label><br>
+<input type="text" id="username" name="username" placeholder="Enter Username" required>
+ 
+
+</div>
+
+<div class="form">
+<p>Gender</p>
+<input type="radio" name="gender" id="Male">
+<label for="Male">Male</label><br>
+
+<input type="radio" name="gender" id="Female">
+<label for="Female">Female</label><br>
+</div>
+<br>
+<div class="form-group">
+<label for="Phone number">Phone number</label><br>
+<input type="phone" placeholder="738**">
+</div>
+<div class="form-group">
+<label for="Date">Date of birth</label><br>
+<input type="date" placeholder="dd/mm/yyyy">
+</div>
+<div class="form-group">
+<label for="email">Email</label><br>
+<input type="email" id="email" name="email" required>
+</div>
+<div class="form-group">
+ 
+<label for="password">Password</label><br>
+<input type="password" id="password" name="password" required>
+</div>
+<div class="form-group">
+<label for="confirm-password">Confirm Password</label><br>
+<input type="password" id="confirm-password" name="confirm-password" required>
+</div>
+<div class="form">
+<p>Hobbies</p>
+<input type="checkbox" name="Singing" id="Singing">
+<label for="Singing">Singing</label><br>
+
+<input type="checkbox" name="Reading" id="Reading">
+<label for="Reading">Reading</label><br>
+
+<input type="checkbox" name="Writing" id="Writing">
+<label for="Writing">Writing</label><br>
+
+<input type="checkbox" name="Travelling" id="Travelling">
+<label for="Travelling">Travelling</label><br>
+</div><br><br>
+<div class="select">
+<label for="Education">Education</label><br>
+<select class="option"required >
+<option selected value="" disabled selected>Select option</option>
+<option value="10+2">10+2</option>
+<option value="Graduation">Graduation</option>
+<option value="Post">Post graduation</option>
+</select><br><br>
+<div class="form-group">
+<label for="Address">Address</label><br>
+<textarea row="10" col="37" placeholder="Address"></textarea>
+</div>
+</div>
+<div class="form-group">
+<label for="Preference"> Preference
+</label><br>
+<input type="Preference" id="Preference" name="Preference" required>
+</div>
+<div class="bu">
+<input type="submit" class="button">
+<input type="reset" class="button">
+</div>
+<p class="message">Already registered? <a href="#">Login</a></p>
+</form>
+</div>
+</body>
+</html>
